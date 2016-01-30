@@ -1,0 +1,146 @@
+@import "../fonts/octicons/octicons.css";
+@import "../fonts/Fakt/fakt.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.line {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+header {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  /*position: relative;*/
+  position: fixed;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  float: left;
+  color: inherit;
+  text-decoration: none;
+  padding: 15px;
+}
+
+header nav ul li a:hover {
+  color: #ef5d4f;
+}
+
+header nav ul li a.selected {
+  font-weight: bold;
+  color: #ef5d4f;
+}
+
+header nav ul li.right {
+  float: right;
+}
+
+.welcome-container {
+  background: linear-gradient(to top, #FBD2C6 0%, #FEF2EE 100%);
+  color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  height: 530px;
+  padding-top: 80px;
+}
+
+.welcome-container img {
+  height: 130px;
+}
+
+.welcome-container h1 {
+  font-family: FaktPro;
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.welcome-container .buttons-container {
+  margin-top: 40px;
+}
+
+.welcome-container .buttons-container button {
+  font-family: FaktPro;
+  border: rgba(235,93,79,0.75) 3px solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: none;
+  color: #f1595f;
+  font-size: 1.1em;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: background ease 0.2s;
+}
+
+.welcome-container .buttons-container button:hover {
+  background: rgb(235, 93, 79);
+  color: #FEF2EE;
+}
+
+.print-app-container {
+  margin-top: -180px;
+  padding-bottom: 20px;
+}
+
+.print-app-container img {
+  /*width: 95%;*/
+  box-shadow: #777 1px 1px 15px;
+}
+
+.gradient-line {
+  background: linear-gradient(to right, #f1595f 0%, #f17b59 100%);
+  color: rgba(255,255,255,0.7);
+  padding: 30px;
+  z-index:2;
+  position: relative;
+}
+
+.gradient-line h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-family: FaktPro;
+  margin-top: 0;
+}
+
+.gradient-line .platforms-container i {
+  font-size: 4em;
+  margin-right: 30px;
+}
+
+.solid-line {
+  background: #FFEEEC;
+  color: #333;
+  padding: 30px;
+  font-family: FaktPro;
+}
+
+.solid-line h1 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  color: rgba(0,0,0,0.7);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
