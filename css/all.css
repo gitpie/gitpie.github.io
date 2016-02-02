@@ -20,7 +20,6 @@ header {
   overflow: hidden;
   color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  /*position: relative;*/
   position: fixed;
   background: rgba(255, 255, 255, 0.7);
 }
@@ -74,7 +73,7 @@ header nav ul li.right {
   margin-top: 40px;
 }
 
-.welcome-container .buttons-container button {
+.welcome-container .buttons-container .button {
   font-family: FaktPro;
   border: rgba(235,93,79,0.75) 3px solid;
   border-radius: 5px;
@@ -88,11 +87,28 @@ header nav ul li.right {
   margin-right: 10px;
   margin-bottom: 10px;
   transition: background ease 0.2s;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.welcome-container .buttons-container button:hover {
+.welcome-container .buttons-container .button:hover {
   background: rgb(235, 93, 79);
   color: #FEF2EE;
+}
+
+.welcome-container .buttons-container h3 {
+  font-family: FaktPro;
+  font-weight: normal;
+}
+
+.welcome-container .buttons-container h3 a {
+  color: #ef5d4f;
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+
+.welcome-container .buttons-container h3 a:hover {
+  opacity: 0.8;
 }
 
 .print-app-container {
