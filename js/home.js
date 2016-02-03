@@ -73,10 +73,10 @@
 
         btnDeb.innerHTML = 'GitPie.deb';
         btnDeb.className = 'button';
-        btnDeb.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[0].browser_download_url : GLOBALS.latestReleaseInfo.assets[4].browser_download_url);
+        // btnDeb.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[0].browser_download_url : GLOBALS.latestReleaseInfo.assets[4].browser_download_url);
 
         btnRpm.innerHTML = 'GitPie.rpm';
-        btnRpm.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[1].browser_download_url : GLOBALS.latestReleaseInfo.assets[5].browser_download_url);
+        // btnRpm.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[1].browser_download_url : GLOBALS.latestReleaseInfo.assets[5].browser_download_url);
         btnRpm.className = 'button';
 
         buttonsContainer.appendChild(btnDeb);
@@ -87,14 +87,14 @@
 
         btnWin.innerHTML = 'GitPie.exe';
         btnWin.className = 'button';
-        btnWin.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[3].browser_download_url : GLOBALS.latestReleaseInfo.assets[7].browser_download_url);
+        // btnWin.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[3].browser_download_url : GLOBALS.latestReleaseInfo.assets[7].browser_download_url);
         buttonsContainer.appendChild(btnWin);
         break;
       case 'mac':
         var btnMac = document.createElement('a');
 
         btnMac.innerHTML = 'GitPie.dmg';
-        btnMac.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[2].browser_download_url : GLOBALS.latestReleaseInfo.assets[6].browser_download_url);
+        // btnMac.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[2].browser_download_url : GLOBALS.latestReleaseInfo.assets[6].browser_download_url);
         btnMac.className = 'button';
         buttonsContainer.appendChild(btnMac);
         break;

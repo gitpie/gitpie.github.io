@@ -22,6 +22,7 @@ header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   position: fixed;
   background: rgba(255, 255, 255, 0.7);
+  z-index: 3;
 }
 
 header nav ul {
@@ -142,8 +143,16 @@ header nav ul li.right {
   margin-right: 30px;
 }
 
+.gradient-line p {
+  font-size: 1.15em;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
 .solid-line {
-  background: #FFEEEC;
   color: #333;
   padding: 30px;
   font-family: FaktPro;
@@ -152,6 +161,64 @@ header nav ul li.right {
 .solid-line h1 {
   font-size: 2em;
   font-weight: normal;
+}
+
+.solid-line.light-orange {
+  background: #FFEEEC;
+}
+
+.solid-line.light-gray {
+  background: #FBFBFB;
+}
+
+.centered-line {
+  max-width: 1000px;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+}
+
+.centered-line .column {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 680px) {
+  .centered-line {
+    display: block !important;
+  }
+
+  .centered-line .column {
+    width: 100% !important;
+  }
+
+  .remotes-container i, .remotes-container .octicon {
+    font-size: 3em !important;
+  }
+}
+
+.centered-line .column p {
+  font-size: 1.15em;
+  color: rgba(51, 51, 51, 0.8);
+  font-family: 'Roboto';
+  font-weight: lighter;
+  line-height: 1.6;
+}
+
+.remotes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remotes-container i, .remotes-container .octicon {
+  font-size: 4em;
+  padding: 0 20px;
+  display: inline-table;
 }
 
 footer {
