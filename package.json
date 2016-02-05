@@ -1,0 +1,52 @@
+{
+  "name": "gitpie.github.io",
+  "version": "1.0.0",
+  "description": "The GitPie website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8484"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitpie/gitpie.github.io.git"
+  },
+  "keywords": [
+    "gitpie",
+    "GitPie",
+    "git",
+    "gui",
+    "git",
+    "client",
+    "nodejs",
+    "angularjs",
+    "node",
+    "open",
+    "source",
+    "version",
+    "control",
+    "repository",
+    "fork",
+    "branch",
+    "merge",
+    "stash",
+    "checkout",
+    "checkin",
+    "push",
+    "pull",
+    "cross",
+    "platform",
+    "mac",
+    "windows",
+    "linux",
+    "multiplatform",
+    "git",
+    "client"
+  ],
+  "author": "Matheus Paiva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitpie/gitpie.github.io/issues"
+  },
+  "homepage": "https://github.com/gitpie/gitpie.github.io#readme"
+}

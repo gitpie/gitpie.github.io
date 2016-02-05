@@ -1,2 +1,11 @@
 # gitpie.github.io
-GitPie site
+
+The GitPie website
+
+## Start
+
+To run the site, just execute:
+
+```sh
+npm start
+```
