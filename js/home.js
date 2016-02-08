@@ -73,10 +73,10 @@
 
         btnDeb.innerHTML = 'GitPie.deb';
         btnDeb.className = 'button';
-        // btnDeb.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[0].browser_download_url : GLOBALS.latestReleaseInfo.assets[4].browser_download_url);
+        btnDeb.href = (GLOBALS.arch == '64bit' ? getDownloadURL([ 'amd64', 'deb' ]) : getDownloadURL([ 'i386', 'deb' ]));
 
         btnRpm.innerHTML = 'GitPie.rpm';
-        // btnRpm.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[1].browser_download_url : GLOBALS.latestReleaseInfo.assets[5].browser_download_url);
+        btnRpm.href = (GLOBALS.arch == '64bit' ? getDownloadURL([ 'x86_64', 'rpm' ]) : getDownloadURL([ 'i386', 'rpm' ]));
         btnRpm.className = 'button';
 
         buttonsContainer.appendChild(btnDeb);
@@ -87,14 +87,14 @@
 
         btnWin.innerHTML = 'GitPie.exe';
         btnWin.className = 'button';
-        // btnWin.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[3].browser_download_url : GLOBALS.latestReleaseInfo.assets[7].browser_download_url);
+        btnWin.href = (GLOBALS.arch == '64bit' ? getDownloadURL([ 'Setup.exe' ]) : getDownloadURL([ 'Setupx86.exe' ]));
         buttonsContainer.appendChild(btnWin);
         break;
       case 'mac':
         var btnMac = document.createElement('a');
 
-        btnMac.innerHTML = 'GitPie.dmg';
-        // btnMac.href = (GLOBALS.arch == '64bit' ? GLOBALS.latestReleaseInfo.assets[2].browser_download_url : GLOBALS.latestReleaseInfo.assets[6].browser_download_url);
+        btnMac.innerHTML = 'GitPie for Mac';
+        btnMac.href = getDownloadURL([ 'darwin-x64']);
         btnMac.className = 'button';
         buttonsContainer.appendChild(btnMac);
         break;
@@ -104,6 +104,26 @@
         h3.innerHTML = 'GitPie is not yet available for your platform, but stay tuned for future releases! <a href="#">See downloads to other platforms</a>';
         buttonsContainer.appendChild(h3);
     }
+  }
+
+  function getDownloadURL(args) {
+    var URL,
+      regex,
+      i = 0;
+
+    regex = new RegExp( '(' + (args.join('|')) + ')', 'g');
+
+    for (i = 0; i < GLOBALS.latestReleaseInfo.assets.length; i++) {
+      var matchArray = GLOBALS.latestReleaseInfo.assets[i].name.match(regex);
+
+      if (matchArray && matchArray.length == args.length) {
+        URL = GLOBALS.latestReleaseInfo.assets[i].browser_download_url;
+
+        break;
+      }
+    }
+
+    return URL;
   }
 
   // Window load listener

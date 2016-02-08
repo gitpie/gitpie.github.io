@@ -25,6 +25,11 @@ header {
   z-index: 3;
 }
 
+header nav {
+  max-width: 1000px;
+  margin: auto;
+}
+
 header nav ul {
   list-style: none;
   margin: 0;
