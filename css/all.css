@@ -221,6 +221,10 @@ header nav ul li.right {
   display: inline-table;
 }
 
+.red-heart {
+  color: #E85846;
+}
+
 footer {
   text-align: center;
   color: rgba(0,0,0,0.7);
