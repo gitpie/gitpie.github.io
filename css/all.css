@@ -236,3 +236,73 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+/*===========================================================================
+ * Style to commom pages
+ ===========================================================================*/
+
+.commom-page header {
+  background-color: #F15E5E;
+  color: #FCE1DE;
+  position: relative !important;
+}
+
+.commom-page header nav ul li a:hover {
+  color: rgba(252,225,222,0.7);
+}
+
+.commom-page header nav ul li a.selected {
+  color: #FFF
+}
+
+.commom-page .align-left-line {
+  max-width: 1000px;
+  width: 80%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.commom-page .releases-container .release {
+  margin-top: 30px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.commom-page .releases-container .release h2 {
+  color: #F15E5E;
+  font-size: 2.5em;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.commom-page .releases-container .release h2 .date {
+  color: #999;
+  font-size: 0.5em;
+  margin-left: 10px;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.commom-page .releases-container .release .title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.commom-page .releases-container .release .body {
+  font-family: Arial, sans-serif;
+  white-space: pre;
+  color: #555;
+  line-height: 2;
+}
+
+.commom-page .releases-container .release ul li a {
+  color: #F15E5E;
+  text-decoration: none;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.commom-page .releases-container .release ul li a:hover {
+  text-decoration: underline;
+}
