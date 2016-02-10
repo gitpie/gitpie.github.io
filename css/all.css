@@ -291,7 +291,7 @@ footer {
 
 .commom-page .releases-container .release .body {
   font-family: Arial, sans-serif;
-  white-space: pre;
+  white-space: pre-line;
   color: #555;
   line-height: 2;
 }
