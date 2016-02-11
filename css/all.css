@@ -204,6 +204,10 @@ header nav ul li.right {
   .remotes-container i, .remotes-container .octicon {
     font-size: 3em !important;
   }
+
+  .commom-page .releases-container .release h2 .date {
+    margin-left: 0 !important;
+  }
 }
 
 .centered-line .column p {
