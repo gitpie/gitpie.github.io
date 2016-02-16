@@ -79,7 +79,7 @@ header nav ul li.right {
   margin-top: 40px;
 }
 
-.welcome-container .buttons-container .button {
+.welcome-container .buttons-container .button, .button {
   font-family: FaktPro;
   border: rgba(235,93,79,0.75) 3px solid;
   border-radius: 5px;
@@ -97,7 +97,7 @@ header nav ul li.right {
   text-decoration: none;
 }
 
-.welcome-container .buttons-container .button:hover {
+.welcome-container .buttons-container .button:hover, .button:hover {
   background: rgb(235, 93, 79);
   color: #FEF2EE;
 }
@@ -123,7 +123,6 @@ header nav ul li.right {
 }
 
 .print-app-container img {
-  /*width: 95%;*/
   box-shadow: #777 1px 1px 15px;
 }
 
@@ -267,20 +266,20 @@ footer {
   margin: auto;
 }
 
-.commom-page .releases-container .release {
+.commom-page .block-container .block {
   margin-top: 30px;
   overflow: hidden;
   font-family: Arial, sans-serif;
 }
 
-.commom-page .releases-container .release h2 {
+.commom-page .block-container .block h2 {
   color: #F15E5E;
   font-size: 2.5em;
   padding-top: 0;
   margin-top: 0;
 }
 
-.commom-page .releases-container .release h2 .date {
+.commom-page .block-container .block h2 .date {
   color: #999;
   font-size: 0.5em;
   margin-left: 10px;
@@ -288,25 +287,29 @@ footer {
   font-weight: normal;
 }
 
-.commom-page .releases-container .release .title {
+.commom-page .block-container .block .title {
   font-weight: bold;
   font-size: 1.4em;
 }
 
-.commom-page .releases-container .release .body {
+.commom-page .block-container .block .body {
   font-family: Arial, sans-serif;
   white-space: pre-line;
   color: #555;
   line-height: 2;
 }
 
-.commom-page .releases-container .release ul li a {
+.commom-page .block-container .block ul li a {
   color: #F15E5E;
   text-decoration: none;
   padding: 5px 0;
   display: inline-block;
 }
 
-.commom-page .releases-container .release ul li a:hover {
+.commom-page .block-container .block ul li a:hover {
   text-decoration: underline;
+}
+
+.commom-page .space-lines .block .title {
+  margin: 20px 0;
 }

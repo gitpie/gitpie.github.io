@@ -9,7 +9,7 @@
     xhr.onload = function () {
       if (this.status == 200) {
         var releaseList = JSON.parse(this.responseText);
-        var releasesContainer = document.querySelector('.releases-container');
+        var releasesContainer = document.querySelector('.block-container');
 
         for (var i = 0; i < releaseList.length; i++) {
           var releaseDiv = document.createElement('div'),
@@ -18,7 +18,7 @@
           releaseDiv.className = 'release';
 
           innerHTML = [
-            '<div class="release">',
+            '<div class="block">',
               '<h2>',
                 releaseList[i].tag_name,
                 '<span class="date">(', new Date(releaseList[i].created_at).toLocaleString(),')</span>',
