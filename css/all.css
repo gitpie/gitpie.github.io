@@ -240,6 +240,15 @@ footer {
   margin-bottom: 30px;
 }
 
+footer a {
+  color: #ef5d4f;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
 /*===========================================================================
  * Style to commom pages
  ===========================================================================*/
